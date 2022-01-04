@@ -27,12 +27,12 @@ html {
 }
 
 .icon-container {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.contact-us{
+.contact-us {
     display: flex;
     flex-direction: row;
     height: 10vh;
@@ -45,9 +45,30 @@ html {
     width: 10vh;
     height: 10vh;
 }
+
 .fa-heart,
 .fa-user,
 .fa-shopping-cart,
-.fa-check-out{
+.fa-check-out {
     @extend.contact-us
+}
+
+#dresslist {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 2rem 0 2rem;
+    background-color: #a80038;
+
+
+    li {
+        padding: 1em 0 1em 0;
+        display: inline-block;
+        text-decoration: none;
+
+        a {
+            text-decoration: none;
+            color: #fbf9fa;
+            font-size: 1.8rem;
+        }
+    }
 }
