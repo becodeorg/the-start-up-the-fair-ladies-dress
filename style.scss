@@ -19,9 +19,9 @@ html {
     height: 15vh;
 }
 
-.nav-bar-left-container-1{
+.nav-bar-left-container-1 {
     border: 2px solid black;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -109,4 +109,22 @@ aside {
             color: #2b2024;
         }
     }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel {
+    margin: 2rem;
+    display: inline-block;
+    width: 75vw;
+    background-color: teal;
+    height: 22vh;
+}
+
+.carousel-item {
+    width: auto;
+
 }
