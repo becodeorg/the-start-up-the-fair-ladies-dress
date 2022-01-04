@@ -162,17 +162,17 @@ aside {
 .container {
     display: flex;
     flex-direction: row;
+
 }
 
 .carousel {
-    margin: 2rem;
-    display: inline-block;
-    width: 75vw;
-    background-color: teal;
-    height: 22vh;
+    margin-left: 23rem;
+    width: 22.61vw;
+    height: 63.9vh;
 }
 
 .carousel-item {
     width: auto;
+    text-align: center;
 
 }
