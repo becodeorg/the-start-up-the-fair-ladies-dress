@@ -51,6 +51,10 @@ html {
     padding: 1rem;
 }
 
+.navs {
+    width: 100vw;
+}
+
 #dresslist {
     display: flex;
     justify-content: space-evenly;
@@ -59,7 +63,7 @@ html {
 
 
     li {
-        padding: 1em 0 1em 0;
+        padding: 1rem 0 1rem 0;
         display: inline-block;
         text-decoration: none;
 
@@ -68,5 +72,26 @@ html {
             color: #fbf9fa;
             font-size: 1.8rem;
         }
+    }
+}
+
+aside {
+    margin: 2rem 2rem 0 2rem;
+
+    .sideNavBar {
+        font-size: 1.5rem;
+        width: 200px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        a {
+            border: solid 1px;
+            text-align: center;
+            text-decoration: none;
+            color: #a80038;
+        }
+
     }
 }
