@@ -47,12 +47,18 @@ body {
                 color: #fbf9fa;
                 font-size: 1.1rem;
             }
+
+            a:hover {
+                text-decoration: underline;
+                font-weight: bold;
+            }
         }
     }
 }
 
 .Slideshow {
     .carousel {
+        margin-top: 2rem;
         margin-left: 35%;
         width: 30%;
 

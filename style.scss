@@ -25,6 +25,10 @@ body {
     background-color: #2b2024;
     padding: 1rem 0 0 1rem;
     display: flex;
+
+    img {
+        border-radius: 50%;
+    }
 }
 
 .logo-container {
@@ -150,6 +154,11 @@ body {
                 text-decoration: none;
                 color: #fbf9fa;
                 font-size: 1.1rem;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                font-weight: bold;
             }
         }
     }

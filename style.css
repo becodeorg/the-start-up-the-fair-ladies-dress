@@ -36,6 +36,10 @@ body {
   display: flex;
 }
 
+.nav-bar-left-container-1 img {
+  border-radius: 50%;
+}
+
 .logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,6 +173,11 @@ body {
   text-decoration: none;
   color: #fbf9fa;
   font-size: 1.1rem;
+}
+
+.navs #dresslist li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 aside {
