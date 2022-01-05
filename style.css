@@ -239,6 +239,7 @@ aside .middlePart .googleMaps {
   margin-top: 6rem;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 840px) {
   #pictures {
     display: none;
@@ -249,6 +250,9 @@ aside .middlePart .googleMaps {
   .navs #dresslist li a {
     font-size: 0.7rem;
   }
+=======
+@media only screen and (max-width: 840px) and (min-width: 601px) {
+>>>>>>> 4f2937307aa00f7cd2dc6141af6b351bbdd87dcb
   #sideNav {
     display: none;
   }
@@ -258,6 +262,39 @@ aside .middlePart .googleMaps {
   }
   #googleMap {
     margin-top: 0;
+  }
+  .nav-bar-left-container-1 {
+    display: none;
+  }
+  .nav-bar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .fa-6x {
+    display: none;
+  }
+  .fa-2x {
+    display: none;
+  }
+  .nav-bar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: start;
+            flex-direction: start;
   }
 }
 
@@ -289,6 +326,36 @@ aside .middlePart .googleMaps {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  nav-bar {
+    position: fixed;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nb-pic1,
+  .nb-pic2 {
+    display: none;
+  }
+  .fa-6x {
+    display: none;
+  }
+  .fa-3x {
+    display: none;
+  }
+  .nav-bar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  .tiny {
+    display: none;
   }
   #middleContainer #googleMap {
     overflow: hidden;
