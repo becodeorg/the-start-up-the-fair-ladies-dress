@@ -20,10 +20,10 @@ html {
     height: 15vh;
 }
 
-.nav-bar-left-container-1{
+.nav-bar-left-container-1 {
     background-color: #2b2024;
-    padding:1rem 0 0 1rem;
-    display:flex;
+    padding: 1rem 0 0 1rem;
+    display: flex;
 }
 
 .logo-container {
@@ -69,42 +69,50 @@ html {
     margin: 0;
     left: 0;
     animation: 12s slider infinite;
-    }
-    
-    #slider figure img {
+}
+
+#slider figure img {
     width: 20%;
     float: right;
-    }
-    
-    @keyframes slider {
+}
+
+@keyframes slider {
     0% {
-    left: 0;
+        left: 0;
     }
+
     20% {
-    left: 0;
+        left: 0;
     }
+
     25% {
-    left: -100%;
+        left: -100%;
     }
+
     45% {
-    left: -100%
+        left: -100%
     }
+
     50% {
-    left: -200%
+        left: -200%
     }
+
     70% {
-    left: -200%
+        left: -200%
     }
+
     75% {
-    left:-300%
+        left: -300%
     }
+
     95% {
-    left: 300%
+        left: 300%
     }
+
     100% {
-    left: -400%
+        left: -400%
     }
-    }
+}
 
 .carousel-container {
     display: flex;
@@ -114,65 +122,74 @@ html {
 
 .navs {
     width: 100vw;
-}
 
-#dresslist {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 2rem 0 2rem;
-    background-color: #a80038;
+    #dresslist {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 2rem 0 2rem;
+        background-color: #a80038;
 
-
-    li {
-        padding: 1rem 0 1rem 0;
-        display: inline-block;
-        text-decoration: none;
-
-        a {
+        li {
+            padding: 1rem 0 1rem 0;
+            display: inline-block;
             text-decoration: none;
-            color: #fbf9fa;
-            font-size: 1.8rem;
+
+            a {
+                text-decoration: none;
+                color: #fbf9fa;
+                font-size: 1.8rem;
+            }
         }
     }
 }
 
 aside {
-    margin: 2rem 2rem 0 2rem;
+    margin-top: 2rem;
 
-    .sideNavBar {
-        font-size: 1.5rem;
-        width: 200px;
-        height: 350px;
+    .middlePart {
+        margin: 0 2rem 0 2rem;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-between;
 
-        a {
+        .sideNavBar {
+            font-size: 1.5rem;
+            width: 200px;
+            height: 400px;
             display: flex;
-            justify-content: center;
-            padding: 0.5em 0 0.5em 0;
-            border: solid 1px;
-            border-radius: 5px;
-            text-decoration: none;
-            color: #2b2024;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            a {
+                display: flex;
+                justify-content: center;
+                padding: 0.5em 0 0.5em 0;
+                border: solid 1px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: #2b2024;
+            }
+        }
+
+        .carousel {
+
+            width: 22.6vw;
+            height: 63.9vh;
+            border-radius: 10px;
+
+            .carousel-control-next-icon {
+                background-color: #a80038;
+                border-radius: 10px;
+            }
+
+            .carousel-control-prev-icon {
+                @extend .carousel-control-next-icon
+            }
+        }
+
+        .googleMaps {
+
+            margin-top: 6rem;
         }
     }
-}
-
-.container {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.carousel {
-    margin-left: 23rem;
-    width: 22.61vw;
-    height: 63.9vh;
-}
-
-.carousel-item {
-    width: auto;
-    text-align: center;
-
 }
