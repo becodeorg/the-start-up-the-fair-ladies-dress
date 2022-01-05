@@ -210,7 +210,6 @@ aside {
     }
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 840px) {
     #pictures {
         display: none;
@@ -225,9 +224,7 @@ aside {
         font-size: 0.7rem;
     }
 
-=======
 @media only screen and (max-width: 840px) and (min-width: 601px) {
->>>>>>> 4f2937307aa00f7cd2dc6141af6b351bbdd87dcb
     #sideNav {
         display: none;
     }
@@ -263,7 +260,6 @@ aside {
         flex-direction: start;
     }
 }
-
 @media only screen and (max-width: 600px) {
 
     .navs {
@@ -289,6 +285,7 @@ aside {
 
     #middleContainer {
         display: flex;
+<<<<<<< Updated upstream
         flex-direction: column;
 <<<<<<< HEAD
 
@@ -307,6 +304,9 @@ aside {
             }
         }
 =======
+=======
+        flex-direction: row;
+>>>>>>> Stashed changes
         flex-wrap: wrap;
 >>>>>>> 4f2937307aa00f7cd2dc6141af6b351bbdd87dcb
     }
