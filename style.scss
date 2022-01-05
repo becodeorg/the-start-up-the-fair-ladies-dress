@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-    height: 10rem;
+    height: 8rem;
 }
 
 .nav-bar-container {
@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 11rem;
+    height: 8.5rem;
 }
 
 .nav-bar-left-container-1 {
@@ -60,8 +60,8 @@ body {
 
 .nb-pic1,
 .nb-pic2 {
-    height: 9.5rem;
-    width: 9.5rem;
+    height: 8rem;
+    width: 8rem;
     padding: 1rem;
 }
 
@@ -195,6 +195,8 @@ aside {
             }
 
             .carousel-control-next-icon {
+                width: 1.5rem;
+                height: 1.5rem;
                 background-color: #a80038;
                 border-radius: 10px;
             }
@@ -224,7 +226,6 @@ aside {
         font-size: 0.7rem;
     }
 
-@media only screen and (max-width: 840px) and (min-width: 601px) {
     #sideNav {
         display: none;
     }
@@ -237,13 +238,16 @@ aside {
     #googleMap {
         margin-top: 0;
     }
+
     .nav-bar-left-container-1 {
         display: none;
     }
+
     .nav-bar-container {
         display: flex;
         justify-content: start;
     }
+
     .fa-6x {
         display: none;
     }
@@ -251,15 +255,18 @@ aside {
     .fa-2x {
         display: none;
     }
+
     .nav-bar-container {
         display: flex;
         justify-content: space-around;
     }
+
     .logo-container {
         display: flex;
         flex-direction: start;
     }
 }
+
 @media only screen and (max-width: 600px) {
 
     .navs {
@@ -285,9 +292,7 @@ aside {
 
     #middleContainer {
         display: flex;
-<<<<<<< Updated upstream
         flex-direction: column;
-<<<<<<< HEAD
 
         #googleMap {
             overflow: hidden;
@@ -303,36 +308,31 @@ aside {
                 position: absolute;
             }
         }
-=======
-=======
-        flex-direction: row;
->>>>>>> Stashed changes
-        flex-wrap: wrap;
->>>>>>> 4f2937307aa00f7cd2dc6141af6b351bbdd87dcb
     }
-    nav-bar {
-        position:fixed;
-        flex-wrap: wrap;
-    }
+
+
     .nb-pic1,
     .nb-pic2 {
         display: none;
     }
+
     .fa-6x {
         display: none;
     }
+
     .fa-3x {
         display: none;
     }
+
     .nav-bar-container {
         display: flex;
         justify-content: space-around;
     }
 }
 
-@media only screen and (min-width: 840px){
+@media only screen and (min-width: 840px) {
 
-.tiny {
-    display: none;
-}
+    .tiny {
+        display: none;
+    }
 }

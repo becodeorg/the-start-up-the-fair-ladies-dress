@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  font-family: 'Luxurious Roman', cursive;
+  background-color: #fbf9fa;
+}
+
+.head-bar {
+  background-color: #2b2024;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 8.5rem;
+}
+
+.head-bar .logo {
+  height: 8rem;
+}
+
+.nav-bar {
+  width: 100vw;
+}
+
+.nav-bar #dresslist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 2rem 0 2rem;
+  background-color: #a80038;
+}
+
+.nav-bar #dresslist #hamburger {
+  display: none;
+}
+
+.nav-bar #dresslist #hamburger img {
+  height: 2.5rem;
+}
+
+.nav-bar #dresslist li {
+  padding: 1rem 0 1rem 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-bar #dresslist li a {
+  text-decoration: none;
+  color: #fbf9fa;
+  font-size: 1.1rem;
+}
+
+.Slideshow .carousel {
+  margin-left: 35%;
+  width: 30%;
+}
+
+.Slideshow .carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.Slideshow .carousel .carousel-control-next-icon, .Slideshow .carousel .carousel-control-prev-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #a80038;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=prom-dresses.css.map */
