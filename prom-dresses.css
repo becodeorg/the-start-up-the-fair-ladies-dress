@@ -63,6 +63,17 @@ body {
   font-weight: bold;
 }
 
+.promInfo {
+  background-color: rgba(168, 0, 56, 0.2);
+  margin: 2rem;
+  text-align: center;
+}
+
+.promInfo p {
+  font-size: 13px;
+  padding: 0.5rem 10rem 1rem 10rem;
+}
+
 .Slideshow .carousel {
   margin-top: 2rem;
   margin-left: 35%;
