@@ -241,6 +241,11 @@ aside .middlePart .carousel {
   border-radius: 10px;
 }
 
+aside .middlePart .carousel img {
+  width: 100%;
+  height: auto;
+}
+
 aside .middlePart .carousel .carousel-control-next-icon, aside .middlePart .carousel .carousel-control-prev-icon {
   background-color: #a80038;
   border-radius: 10px;
@@ -248,5 +253,30 @@ aside .middlePart .carousel .carousel-control-next-icon, aside .middlePart .caro
 
 aside .middlePart .googleMaps {
   margin-top: 6rem;
+}
+
+@media only screen and (max-width: 840px) {
+  #sideNav {
+    display: none;
+  }
+  .carousel {
+    width: auto !important;
+    height: auto;
+  }
+  #googleMap {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #middleContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

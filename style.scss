@@ -177,6 +177,11 @@ aside {
             height: 63.9vh;
             border-radius: 10px;
 
+            img {
+                width: 100%;
+                height: auto;
+            }
+
             .carousel-control-next-icon {
                 background-color: #a80038;
                 border-radius: 10px;
@@ -188,8 +193,29 @@ aside {
         }
 
         .googleMaps {
-
             margin-top: 6rem;
         }
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    #sideNav {
+        display: none;
+    }
+
+    .carousel {
+        width: auto !important;
+        height: auto;
+    }
+
+    #googleMap {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #middleContainer {
+        display: flex;
+        flex-direction: column;
     }
 }
