@@ -5,6 +5,9 @@
   --clr-primary-900: #2B2024;
 
 }
+html {
+  font-size: 16px;
+}
 
 body,
 h1,
@@ -17,7 +20,6 @@ p {
 
 .grid {
     display: grid;
-    grid-template-rows: 0.5 fr 1fr 2fr 1fr 1fr;
     grid-template-areas:
     "row-1"
     "row-2"
@@ -66,6 +68,13 @@ p {
 .bg-img-row-2{
   background-color:var(--clr-primary-500);
   padding: 4rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+.our-mission {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .our-mission h1 {
@@ -134,6 +143,11 @@ figcaption {
 
 .face-1 {
   border-radius: 20rem;
+}
+
+.face-2 {
+  border-radius: 20rem;
+  height: 22rem;
 }
 
 .container-icons {
@@ -211,7 +225,6 @@ h1.name {
 
 .row-4 {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .stylists,
 .dress-center,
@@ -222,7 +235,8 @@ h1.name {
 .stylists {
   background-image: url("./stylists.png");
   border-radius: 2rem;
-  height: 12rem;
+  background-repeat: no-repeat;
+  height: 15rem;
 }
 
 .stylists-text {
@@ -232,7 +246,34 @@ h1.name {
   background-color:var(--clr-primary-900);
   color:var(--clr-primary-500);
   padding-top: 1rem;
+  text-shadow: var(--clr-primary-300) 1px 1px 2px;
+  border-radius: 2rem;
+  outline: 2px solid black;
+  display:flex;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
 }
+
+.dress-center-bg {
+  background-image: url("./wedding-shop.jpg");
+  border-radius: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+.text-dress-center {
+  background-color: var(--clr-primary-900);
+  border-radius: 2rem;
+  color:var(--clr-primary-300);
+  position: relative;
+  top: 12rem;
+  left: 8.5rem;
+  width: 50vw;
+}
+
 
 
 
