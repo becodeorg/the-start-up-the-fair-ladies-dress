@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-  height: 8rem;
+  height: 6.5rem;
 }
 
 .nav-bar-container {
@@ -25,19 +25,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 8.5rem;
+  height: 7rem;
 }
 
 .nav-bar-left-container-1 {
-  background-color: #2b2024;
-  padding: 1rem 0 0 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-left: 5rem;
 }
 
 .nav-bar-left-container-1 img {
-  border-radius: 50%;
+  height: 7rem;
 }
 
 .logo-container {
@@ -47,6 +43,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-items: center;
 }
 
 .icon-container {
@@ -56,8 +53,25 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  padding-top: 2rem;
+  padding-top: 1.2rem;
   padding-right: 2rem;
+}
+
+.icon-container .dropdown {
+  display: none;
+}
+
+.icon-container .dropdown .btn {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #FD0054;
+  font-weight: bold;
+  border: none;
+  background-color: #2b2024;
+}
+
+.icon-container .dropdown .dropdown-menu {
+  background-color: #2b2024;
 }
 
 .fa-envelope, .fa-heart,
@@ -250,12 +264,25 @@ aside .middlePart .googleMaps {
   margin-top: 6rem;
 }
 
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #414b4b;
+  color: black;
+}
+
 @media only screen and (max-width: 840px) {
-  #pictures {
-    display: none;
+  .nav-bar-left-container-1 {
+    padding-left: 0;
   }
   .logo-container {
-    margin-left: 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: start;
+            flex-direction: start;
   }
   .navs #dresslist li a {
     font-size: 0.7rem;
@@ -270,21 +297,14 @@ aside .middlePart .googleMaps {
   #googleMap {
     margin-top: 0;
   }
-  .nav-bar-left-container-1 {
+  .icon-container {
+    padding-top: 1.6rem;
+    padding-right: 0rem;
+  }
+  .icon-container .fa-4x {
     display: none;
   }
-  .nav-bar-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .fa-6x {
-    display: none;
-  }
-  .fa-2x {
+  .icon-container .fa-2x {
     display: none;
   }
   .nav-bar-container {
@@ -293,15 +313,6 @@ aside .middlePart .googleMaps {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  .logo-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: start;
-            flex-direction: start;
   }
 }
 
@@ -347,13 +358,6 @@ aside .middlePart .googleMaps {
     width: 100%;
     position: absolute;
   }
-  .nb-pic1,
-  .nb-pic2 {
-    display: none;
-  }
-  .fa-6x {
-    display: none;
-  }
   .fa-3x {
     display: none;
   }
@@ -361,8 +365,27 @@ aside .middlePart .googleMaps {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-bar-container .icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    justify-items: end;
+  }
+  .nav-bar-container .icon-container .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 2rem;
+  }
+  .nav-bar-container .icon-container .icons {
+    display: none;
   }
 }
 

@@ -63,6 +63,51 @@ body {
   font-weight: bold;
 }
 
+/* The alert message box */
+.alert {
+  z-index: 1000;
+  position: absolute;
+  padding: 20px;
+  background-color: rgba(102, 0, 34, 0.9);
+  /* Red */
+  color: white;
+  margin: 0 10% 15px 10%;
+  text-align: center;
+}
+
+.alert p {
+  font-size: 1rem;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+.promInfo {
+  background-color: rgba(168, 0, 56, 0.2);
+  margin: 2rem;
+  text-align: center;
+}
+
+.promInfo p {
+  font-size: 13px;
+  padding: 0.5rem 10rem 1rem 10rem;
+}
+
 .Slideshow .carousel {
   margin-top: 2rem;
   margin-left: 35%;
