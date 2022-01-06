@@ -30,13 +30,31 @@
         </div>
         <div class="nav-bar">
             <ul id="dresslist">
-                <li id="hamburger"><img src="/hamburger-menu-svgrepo-com.svg" alt=""></li>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/Mermaid-768x1037.jpg">Evening dresses</a></li>
-                <li><a href="#">Wedding dresses</a></li>
-                <li><a href="#">Party Dresses</a></li>
-                <li><a href="#">Special Occasions</a></li>
-                <li><a href="#">Accessories</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary " type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/hamburger-menu-svgrepo-com.svg" alt="Menu">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="/index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Evening Dresses</a></li>
+                            <li><a class="dropdown-item" href="#">Party Dresses</a></li>
+                            <li><a class="dropdown-item" href="#">Special Occasions</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="listItems"><a href="/index.html">Home</a></li>
+                <li id="listItems"><a href="/Mermaid-768x1037.jpg">Evening dresses</a></li>
+                <li id="listItems"><a href="#">Wedding dresses</a></li>
+                <li id="listItems"><a href="#">Party Dresses</a></li>
+                <li id="listItems"><a href="#">Special Occasions</a></li>
+                <li id="listItems"><a href="#">Accessories</a></li>
             </ul>
         </div>
     </nav>
@@ -44,15 +62,16 @@
         <div class="alert">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             <h2>Always welcome!</h2>
-            <p>However, due to crowds and because we always want to provide an optimal and personal service, we only work by
+            <p>However, due to crowds and because we always want to provide an optimal and personal service, we only
+                work by
                 appointment during our opening hours: Monday to Thursday between 10.00 and
                 18.00. Also open on Saturday between 10am and 5pm</p>
-                <p>If needed we can always make an appointment outside of the opening-hours.</p>
+            <p>If needed we can always make an appointment outside of the opening-hours.</p>
         </div>
         <div class="promInfo">
-            <h2>New collection 2022</h2>
-            <p>Are you getting married? <br>
-                Then go for a unique experience and enjoy the personal approach and philosophy of The Fair Ladies Dress.
+            <h2>New collection 2022</h2> <br>
+            <h5>Are you getting married?</h5>
+            <p>Then go for a unique experience and enjoy the personal approach and philosophy of The Fair Ladies Dress.
                 We have a collection of more than 100 different models. So you don't choose on a drawing, but
                 you can fit everything. In addition, you can ask for all possible adjustments or choose other fabrics.
             </p>
@@ -94,7 +113,49 @@
                 </button>
             </div>
         </div>
+        <div class="containerr">
+            <div class="row mx-5 mt-5 py-5">
+                <div class="col-8 ms-4">
+                    <h3 class="blueTitle"><b>Blog</b></h3>
+                    <h5 class="me-5 pe-5">Find out about all of our latest wedding dresses available here in our bridal
+                        shops. INSPIRATION, GUIDELINES AND TIPS FOR YOUR PERFECT WEDDING DRESS & BIG DAY…</h5>
+                </div>
+                <div class="col-2 mx-auto">
+                    <img src="/Prom/the-wedding-blog-logo.jpg" class="sideImage" alt="">
+                </div>
+            </div>
+            <br><br>
+            <div class="row mx-5 py-5">
+                <div class="col-2 mx-auto">
+                    <img src="/Prom/Logo-your-digital-wedding-guide-3.png" class="sideImage" alt="">
+                </div>
+                <div class="col-8 ms-5 ps-5">
+                    <h3 class="blueTitle"><b>Wedding Guide</b></h3>
+                    <h5 class="me-4 pe-4">All the details you need to know before your wedding, from knowing your wedding
+                        dress shapes to what to expect when visiting one of our stores. You can find it all here in the
+                        wedding guides...</h5>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="row mx-5 py-5">
+                <div class="col-8 ms-4">
+                    <h3 class="blueTitle"><b>Wedding Suppliers</b></h3>
+                    <h5 class="me-5 pe-5">Looking for the perfect wedding supplier? Browse our map or location and bring
+                        your wedding vision to life. Everything from transportation, photographers to florists, cake
+                        makers and entertainers.</h5>
+                </div>
+                <div class="col-2 mb-4 text-center">
+                    <img src="/Prom/my-wedding-suppliers-wesbite-logo.png" class="sideImage" alt="">
+                </div>
+            </div>
+            <br>
+        </div>
     </main>
+    <footer>
+        <h6>Copyright © 2022 The Fair Ladies Dress</h6>
+        <h6 id="footerMaterial">UK's No. 1 Wedding Destination | Site Map Use of this site
+            constitutes acceptance of our User Agreement, Privacy and Cookies policy | Legal.</h6>
+    </footer>
 </body>
 
 </html>

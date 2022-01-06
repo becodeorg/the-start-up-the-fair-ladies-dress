@@ -38,12 +38,23 @@ body {
   background-color: #a80038;
 }
 
-.nav-bar #dresslist #hamburger {
+.nav-bar #dresslist .dropdown {
   display: none;
 }
 
-.nav-bar #dresslist #hamburger img {
-  height: 2.5rem;
+.nav-bar #dresslist .dropdown .btn {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #FD0054;
+  font-weight: bold;
+  border: none;
+  background-color: #a80038;
+}
+
+.nav-bar #dresslist .dropdown .dropdown-menu {
+  background-color: #2b2024;
+  text-align: center;
+  opacity: 0.9;
 }
 
 .nav-bar #dresslist li {
@@ -69,9 +80,8 @@ body {
   position: absolute;
   padding: 20px;
   background-color: rgba(102, 0, 34, 0.9);
-  /* Red */
   color: white;
-  margin: 0 10% 15px 10%;
+  margin: 5% 20% 15px 20%;
   text-align: center;
 }
 
@@ -104,14 +114,13 @@ body {
 }
 
 .promInfo p {
-  font-size: 13px;
-  padding: 0.5rem 10rem 1rem 10rem;
+  font-size: 16px;
+  padding: 0.5rem 8vw 1rem 8vw;
 }
 
 .Slideshow .carousel {
-  margin-top: 2rem;
-  margin-left: 35%;
-  width: 30%;
+  margin: 2rem 0 2rem 30vw;
+  width: 40vw;
 }
 
 .Slideshow .carousel .carousel-item img {
@@ -125,5 +134,56 @@ body {
   height: 1.5rem;
   background-color: #a80038;
   border-radius: 10px;
+}
+
+.containerr {
+  background-color: rgba(168, 0, 56, 0.2);
+  color: #2b2024;
+}
+
+.containerr .sideImage {
+  width: 95%;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #2b2024;
+  color: #fbf9fa;
+}
+
+@media only screen and (max-width: 840px) {
+  .nav-bar #dresslist li a {
+    font-size: 0.7rem;
+  }
+  .promInfo p {
+    font-size: 10px;
+  }
+  .Slideshow .carousel {
+    margin-top: 2rem;
+    margin-left: 25%;
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar #dresslist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav-bar #dresslist .dropdown {
+    display: inline;
+    margin-right: 7vw;
+  }
+  .nav-bar #dresslist #listItems a {
+    display: none;
+  }
+  footer #footerMaterial {
+    display: none;
+  }
 }
 /*# sourceMappingURL=prom-dresses.css.map */
