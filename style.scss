@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-    height: 8rem;
+    height: 6.5rem;
 }
 
 .nav-bar-container {
@@ -18,29 +18,44 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 8.5rem;
+    height: 7rem;
 }
 
 .nav-bar-left-container-1 {
-    background-color: #2b2024;
-    padding: 1rem 0 0 1rem;
-    display: flex;
+    padding-left: 5rem;
 
     img {
-        border-radius: 50%;
+        height: 7rem;
     }
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
+    justify-items: center;
 }
 
 .icon-container {
     display: flex;
     justify-content: end;
-    padding-top: 2rem;
+    padding-top: 1.2rem;
     padding-right: 2rem;
+
+    .dropdown {
+        display: none;
+
+        .btn {
+            box-shadow: none !important;
+            color: #FD0054;
+            font-weight: bold;
+            border: none;
+            background-color: #2b2024;
+        }
+
+        .dropdown-menu {
+            background-color: #2b2024;
+        }
+    }
 }
 
 .fa-envelope {
@@ -222,12 +237,13 @@ aside {
 }
 
 @media only screen and (max-width: 840px) {
-    #pictures {
-        display: none;
+    .nav-bar-left-container-1 {
+        padding-left: 0;
     }
 
     .logo-container {
-        margin-left: 10vw;
+        display: flex;
+        flex-direction: start;
     }
 
     .navs #dresslist li a {
@@ -248,31 +264,22 @@ aside {
         margin-top: 0;
     }
 
-    .nav-bar-left-container-1 {
-        display: none;
-    }
+    .icon-container {
+        padding-top: 1.6rem;
+        padding-right: 0rem;
 
-    .nav-bar-container {
-        display: flex;
-        justify-content: start;
-    }
+        .fa-4x {
+            display: none;
+        }
 
-    .fa-6x {
-        display: none;
-    }
-
-    .fa-2x {
-        display: none;
+        .fa-2x {
+            display: none;
+        }
     }
 
     .nav-bar-container {
         display: flex;
         justify-content: space-around;
-    }
-
-    .logo-container {
-        display: flex;
-        flex-direction: start;
     }
 }
 
@@ -319,23 +326,28 @@ aside {
         }
     }
 
-
-    .nb-pic1,
-    .nb-pic2 {
-        display: none;
-    }
-
-    .fa-6x {
-        display: none;
-    }
-
     .fa-3x {
         display: none;
     }
 
     .nav-bar-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        .icon-container {
+            display: flex;
+            justify-content: end;
+            justify-items: end;
+
+            .dropdown {
+                display: flex;
+                padding-bottom: 2rem;
+            }
+
+            .icons {
+                display: none;
+            }
+        }
     }
 }
 
