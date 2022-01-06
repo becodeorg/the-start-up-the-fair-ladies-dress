@@ -96,64 +96,6 @@ body {
   padding: 1rem;
 }
 
-/* Additional code for a carousel, that is not being use; but it is quite basic and easy to interpret so possibly useful 
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 12s slider infinite;
-}
-
-#slider figure img {
-    width: 20%;
-    float: right;
-}
-
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-
-    20% {
-        left: 0;
-    }
-
-    25% {
-        left: -100%;
-    }
-
-    45% {
-        left: -100%
-    }
-
-    50% {
-        left: -200%
-    }
-
-    70% {
-        left: -200%
-    }
-
-    75% {
-        left: -300%
-    }
-
-    95% {
-        left: 300%
-    }
-
-    100% {
-        left: -400%
-    }
-}
-
-.carousel-container {
-    display: flex;
-    flex-direction: row;
-}
- */
 .navs {
   width: 100vw;
 }
@@ -244,7 +186,7 @@ aside .middlePart .sideNavBar a {
 
 aside .middlePart .carousel {
   width: 22.6vw;
-  height: 70vh;
+  height: 60%;
   border-radius: 10px;
 }
 
@@ -267,7 +209,7 @@ aside .middlePart .googleMaps {
 footer {
   padding: 20px;
   text-align: center;
-  background-color: #414b4b;
+  background-color: #2b2024;
   color: black;
 }
 
@@ -313,6 +255,15 @@ footer {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
