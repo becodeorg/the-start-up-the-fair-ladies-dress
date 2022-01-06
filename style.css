@@ -264,6 +264,13 @@ aside .middlePart .googleMaps {
   margin-top: 6rem;
 }
 
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #414b4b;
+  color: black;
+}
+
 @media only screen and (max-width: 840px) {
   .nav-bar-left-container-1 {
     padding-left: 0;
