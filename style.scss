@@ -234,6 +234,13 @@ footer {
         display: flex;
         flex-direction: column;
 
+        .videoArt {
+            width: 50%;
+
+            .reviews h5 {
+                display: none;
+            }
+        }
     }
 }
 

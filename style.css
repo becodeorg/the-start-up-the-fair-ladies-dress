@@ -265,6 +265,12 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .testimonials .videoArt {
+    width: 50%;
+  }
+  .testimonials .videoArt .reviews h5 {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
