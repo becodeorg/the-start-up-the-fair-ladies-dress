@@ -255,23 +255,23 @@ aside .middlePart .googleMaps {
   color: #2b2024;
 }
 
-.contact-container .contactSection .contactFrom {
+.contact-container .contactSection .contactForm {
   margin: 2rem;
 }
 
-.contact-container .contactSection .contactFrom .contactItem {
+.contact-container .contactSection .contactForm .contactItem {
   font-size: 20px;
   border-radius: 10px;
   color: #2b2024;
 }
 
-.contact-container .contactSection .contactFrom .mailItem {
+.contact-container .contactSection .contactForm .mailItem {
   font-size: 250%;
   border-color: #2b2024;
   background-color: #fbf9fa;
 }
 
-.contact-container .contactSection .contactFrom textarea {
+.contact-container .contactSection .contactForm textarea {
   background-color: #fbf9fa;
   color: #2b2024;
   border-color: #2b2024;
