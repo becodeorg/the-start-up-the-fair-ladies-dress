@@ -28,6 +28,7 @@ body {
         justify-content: space-evenly;
         margin: 0 2rem 0 2rem;
         background-color: #a80038;
+        border-radius: 0 0 5px 5px;
 
         .dropdown {
             display: none;
@@ -98,10 +99,15 @@ body {
     color: black;
 }
 
+main {
+    width: 100vw;
+}
+
 .promInfo {
     background-color: rgba(168, 0, 56, 0.2);
     margin: 2rem;
     text-align: center;
+    border-radius: 5px;
 
     p {
         font-size: 16px;

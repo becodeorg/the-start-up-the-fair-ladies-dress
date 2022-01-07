@@ -3,10 +3,23 @@
     padding: 0;
 }
 
+@keyframes backgroundColorChange {
+    0% {
+        background-color: #a80038;
+    }
+
+    50% {
+        background-color: #2b2024;
+    }
+
+    100% {
+        background-color: #a80038;
+    }
+}
+
 body {
     font-size: 10px;
     font-family: 'Luxurious Roman', cursive;
-    background-color: #fbf9fa;
 }
 
 .logo {
@@ -91,7 +104,11 @@ body {
         display: flex;
         justify-content: space-evenly;
         margin: 0 2rem 0 2rem;
-        background-color: #a80038;
+        background-color: #fbf9fa;
+        animation-name: backgroundColorChange;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        border-radius: 0 0 5px 5px;
 
         #hamburger {
             display: none;
