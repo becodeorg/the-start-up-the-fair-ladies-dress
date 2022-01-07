@@ -177,11 +177,16 @@ aside {
     }
 }
 
+.containerr {
+    margin: 2rem 0 0rem 0;
+    background-color: rgba(168, 0, 56, 0.1);
+}
+
 footer {
     padding: 20px;
     text-align: center;
     background-color: #2b2024;
-    color: black;
+    color: #fbf9fa;
 }
 
 @media only screen and (max-width: 840px) {
@@ -195,7 +200,6 @@ footer {
     }
 
     .navs #dresslist li a {
-
         font-size: 0.7rem;
     }
 
@@ -234,6 +238,13 @@ footer {
         display: flex;
         flex-direction: column;
 
+        .videoArt {
+            width: 50%;
+
+            .reviews h5 {
+                display: none;
+            }
+        }
     }
 }
 
@@ -302,6 +313,10 @@ footer {
                 display: none;
             }
         }
+    }
+
+    footer #footerMaterial {
+        display: none;
     }
 }
 

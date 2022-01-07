@@ -206,11 +206,16 @@ aside .middlePart .googleMaps {
   margin-top: 6rem;
 }
 
+.containerr {
+  margin: 2rem 0 0rem 0;
+  background-color: rgba(168, 0, 56, 0.1);
+}
+
 footer {
   padding: 20px;
   text-align: center;
   background-color: #2b2024;
-  color: black;
+  color: #fbf9fa;
 }
 
 @media only screen and (max-width: 840px) {
@@ -264,6 +269,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .testimonials .videoArt {
+    width: 50%;
+  }
+  .testimonials .videoArt .reviews h5 {
+    display: none;
   }
 }
 
@@ -336,6 +347,9 @@ footer {
     padding-bottom: 2rem;
   }
   .nav-bar-container .icon-container .icons {
+    display: none;
+  }
+  footer #footerMaterial {
     display: none;
   }
 }

@@ -29,11 +29,21 @@ body {
         margin: 0 2rem 0 2rem;
         background-color: #a80038;
 
-        #hamburger {
+        .dropdown {
             display: none;
 
-            img {
-                height: 2.5rem;
+            .btn {
+                box-shadow: none !important;
+                color: #FD0054;
+                font-weight: bold;
+                border: none;
+                background-color: #a80038;
+            }
+
+            .dropdown-menu {
+                background-color: #2b2024;
+                text-align: center;
+                opacity: 0.9;
             }
         }
 
@@ -58,13 +68,12 @@ body {
 
 /* The alert message box */
 .alert {
-    z-index: 1000; // or any value higher than your other elements
+    z-index: 1000;
     position: absolute;
     padding: 20px;
     background-color: rgba(102, 0, 34, 0.9);
-    /* Red */
     color: white;
-    margin: 0 10% 15px 10%;
+    margin: 5% 20% 15px 20%;
     text-align: center;
 
     p {
@@ -95,16 +104,15 @@ body {
     text-align: center;
 
     p {
-        font-size: 13px;
-        padding: 0.5rem 10rem 1rem 10rem;
+        font-size: 16px;
+        padding: 0.5rem 8vw 1rem 8vw;
     }
 }
 
 .Slideshow {
     .carousel {
-        margin-top: 2rem;
-        margin-left: 35%;
-        width: 30%;
+        margin: 2rem 0 2rem 30vw;
+        width: 40vw;
 
         .carousel-item {
             img {
@@ -123,6 +131,73 @@ body {
 
         .carousel-control-prev-icon {
             @extend .carousel-control-next-icon
+        }
+
+    }
+}
+
+.containerr {
+    background-color: rgba(168, 0, 56, 0.2);
+    color: #2b2024;
+
+    .sideImage {
+        width: 120%;
+    }
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #2b2024;
+    color: #fbf9fa;
+}
+
+@media only screen and (max-width: 840px) {
+    .nav-bar #dresslist li a {
+        font-size: 0.7rem;
+    }
+
+    .promInfo p {
+        font-size: 10px;
+    }
+
+    .Slideshow {
+        .carousel {
+            margin-top: 2rem;
+            margin-left: 25%;
+            width: 55%;
+        }
+    }
+
+    .containerr {
+        .sideInfo {
+            display: none;
+        }
+
+        .sideImage {
+            width: 200%;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .nav-bar {
+            #dresslist {
+                display: flex;
+                justify-content: center;
+
+                .dropdown {
+                    display: inline;
+                    margin-right: 7vw;
+                }
+
+                #listItems a {
+                    display: none;
+                }
+            }
+        }
+
+        footer #footerMaterial {
+            display: none;
         }
 
     }
