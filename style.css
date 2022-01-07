@@ -241,6 +241,33 @@ aside .middlePart .googleMaps {
   background-color: rgba(168, 0, 56, 0.1);
 }
 
+.contactSection {
+  text-align: center;
+  margin: 2rem;
+}
+
+.contactSection .contactFrom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
+}
+
+.contactSection .contactFrom .contactItem {
+  font-size: 20px;
+}
+
+.contactSection .contactFrom .mailItem {
+  font-size: 300%;
+}
+
 footer {
   padding: 20px;
   text-align: center;
@@ -306,9 +333,22 @@ footer {
   .testimonials .videoArt .reviews h5 {
     display: none;
   }
+  .contactSection .contactFrom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactSection .contactFrom .mailItem {
+    margin: 1rem 0 1rem 0;
+    font-size: 250%;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 840px) and (max-width: 600px) {
   .navs #dresslist {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -384,7 +424,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 840px) {
+@media only screen and (max-width: 840px) and (min-width: 840px) {
   .tiny {
     display: none;
   }

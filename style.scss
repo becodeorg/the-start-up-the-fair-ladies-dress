@@ -199,6 +199,26 @@ aside {
     background-color: rgba(168, 0, 56, 0.1);
 }
 
+.contactSection {
+    text-align: center;
+    margin: 2rem;
+
+    .contactFrom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem;
+
+        .contactItem {
+            font-size: 20px;
+        }
+
+        .mailItem {
+            font-size: 300%;
+        }
+    }
+}
+
 footer {
     padding: 20px;
     text-align: center;
@@ -263,83 +283,95 @@ footer {
             }
         }
     }
-}
 
-@media only screen and (max-width: 600px) {
-
-    .navs {
-        #dresslist {
+    .contactSection {
+        .contactFrom {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
 
-            #hamburger {
-                margin-left: 0;
-                display: inline;
-                cursor: pointer;
-            }
-
-            li a {
-                display: none;
+            .mailItem {
+                margin: 1rem 0 1rem 0;
+                font-size: 250%;
             }
         }
     }
 
-    aside .middlePart .carousel {
-        height: 100vh;
-    }
+    @media only screen and (max-width: 600px) {
 
-    #middleContainer {
-        display: flex;
-        flex-direction: column;
-
-        #googleMap {
-            overflow: hidden;
-            padding-bottom: 40%;
-            position: relative;
-            height: 0;
-
-            iframe {
-                left: 0;
-                top: 0;
-                height: 100%;
-                width: 100%;
-                position: absolute;
-            }
-        }
-    }
-
-    .fa-3x {
-        display: none;
-    }
-
-    .nav-bar-container {
-        display: flex;
-        justify-content: space-between;
-
-        .icon-container {
-            display: flex;
-            justify-content: end;
-            justify-items: end;
-
-            .dropdown {
+        .navs {
+            #dresslist {
                 display: flex;
-                padding-bottom: 2rem;
-            }
+                justify-content: center;
 
-            .icons {
-                display: none;
+                #hamburger {
+                    margin-left: 0;
+                    display: inline;
+                    cursor: pointer;
+                }
+
+                li a {
+                    display: none;
+                }
             }
+        }
+
+        aside .middlePart .carousel {
+            height: 100vh;
+        }
+
+        #middleContainer {
+            display: flex;
+            flex-direction: column;
+
+            #googleMap {
+                overflow: hidden;
+                padding-bottom: 40%;
+                position: relative;
+                height: 0;
+
+                iframe {
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                }
+            }
+        }
+
+        .fa-3x {
+            display: none;
+        }
+
+        .nav-bar-container {
+            display: flex;
+            justify-content: space-between;
+
+            .icon-container {
+                display: flex;
+                justify-content: end;
+                justify-items: end;
+
+                .dropdown {
+                    display: flex;
+                    padding-bottom: 2rem;
+                }
+
+                .icons {
+                    display: none;
+                }
+            }
+        }
+
+        footer #footerMaterial {
+            display: none;
         }
     }
 
-    footer #footerMaterial {
-        display: none;
-    }
-}
+    @media only screen and (min-width: 840px) {
 
-@media only screen and (min-width: 840px) {
-
-    .tiny {
-        display: none;
+        .tiny {
+            display: none;
+        }
     }
 }
