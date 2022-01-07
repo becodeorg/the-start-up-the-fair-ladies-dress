@@ -247,25 +247,28 @@ aside .middlePart .googleMaps {
 }
 
 .contactSection .contactFrom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 2rem;
 }
 
 .contactSection .contactFrom .contactItem {
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .contactSection .contactFrom .mailItem {
   font-size: 300%;
+}
+
+.contactSection .contactFrom textarea {
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+  font-size: 14px;
+  padding: 1rem;
+}
+
+.contactSection .phoneNumber {
+  font-size: 1.5rem;
 }
 
 footer {
