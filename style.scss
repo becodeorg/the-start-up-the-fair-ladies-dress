@@ -69,6 +69,10 @@ body {
             background-color: #2b2024;
         }
     }
+
+    .tiny {
+        display: none;
+    }
 }
 
 .fa-envelope {
@@ -199,33 +203,45 @@ aside {
     background-color: rgba(168, 0, 56, 0.1);
 }
 
-.contactSection {
-    text-align: center;
-    margin: 2rem;
+.contact-container {
+    background-color: rgba(168, 0, 56, 0.05);
 
-    .contactFrom {
-        margin: 2rem;
+    .contactSection {
+        text-align: center;
+        padding: 2rem;
+        color: #2b2024;
 
-        .contactItem {
-            font-size: 20px;
-            border-radius: 10px;
+        .contactFrom {
+            margin: 2rem;
+
+            .contactItem {
+                font-size: 20px;
+                border-radius: 10px;
+                color: #2b2024;
+            }
+
+            .mailItem {
+                font-size: 250%;
+                border-color: #2b2024;
+                background-color: #fbf9fa;
+            }
+
+            textarea {
+                background-color: #fbf9fa;
+                color: #2b2024;
+                border-color: #2b2024;
+                border: solid 2px;
+                border-radius: 10px;
+                width: 100%;
+                height: 150px;
+                font-size: 14px;
+                padding: 1rem;
+            }
         }
 
-        .mailItem {
-            font-size: 300%;
+        .phoneNumber {
+            font-size: 1.5rem;
         }
-
-        textarea {
-            border-radius: 10px;
-            width: 100%;
-            height: 150px;
-            font-size: 14px;
-            padding: 1rem;
-        }
-    }
-
-    .phoneNumber {
-        font-size: 1.5rem;
     }
 }
 
@@ -271,8 +287,8 @@ footer {
             display: none;
         }
 
-        .fa-2x {
-            display: none;
+        .fa-3x {
+            display: flex;
         }
     }
 
@@ -301,7 +317,7 @@ footer {
 
             .mailItem {
                 margin: 1rem 0 1rem 0;
-                font-size: 250%;
+                font-size: 200%;
             }
         }
     }

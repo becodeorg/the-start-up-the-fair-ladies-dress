@@ -97,6 +97,10 @@ body {
   background-color: #2b2024;
 }
 
+.icon-container .tiny {
+  display: none;
+}
+
 .fa-envelope, .fa-heart,
 .fa-user,
 .fa-shopping-cart,
@@ -241,25 +245,37 @@ aside .middlePart .googleMaps {
   background-color: rgba(168, 0, 56, 0.1);
 }
 
-.contactSection {
+.contact-container {
+  background-color: rgba(168, 0, 56, 0.05);
+}
+
+.contact-container .contactSection {
   text-align: center;
+  padding: 2rem;
+  color: #2b2024;
+}
+
+.contact-container .contactSection .contactFrom {
   margin: 2rem;
 }
 
-.contactSection .contactFrom {
-  margin: 2rem;
-}
-
-.contactSection .contactFrom .contactItem {
+.contact-container .contactSection .contactFrom .contactItem {
   font-size: 20px;
   border-radius: 10px;
+  color: #2b2024;
 }
 
-.contactSection .contactFrom .mailItem {
-  font-size: 300%;
+.contact-container .contactSection .contactFrom .mailItem {
+  font-size: 250%;
+  border-color: #2b2024;
+  background-color: #fbf9fa;
 }
 
-.contactSection .contactFrom textarea {
+.contact-container .contactSection .contactFrom textarea {
+  background-color: #fbf9fa;
+  color: #2b2024;
+  border-color: #2b2024;
+  border: solid 2px;
   border-radius: 10px;
   width: 100%;
   height: 150px;
@@ -267,7 +283,7 @@ aside .middlePart .googleMaps {
   padding: 1rem;
 }
 
-.contactSection .phoneNumber {
+.contact-container .contactSection .phoneNumber {
   font-size: 1.5rem;
 }
 
@@ -311,8 +327,10 @@ footer {
   .icon-container .fa-4x {
     display: none;
   }
-  .icon-container .fa-2x {
-    display: none;
+  .icon-container .fa-3x {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .nav-bar-container {
     display: -webkit-box;
@@ -347,7 +365,7 @@ footer {
   }
   .contactSection .contactFrom .mailItem {
     margin: 1rem 0 1rem 0;
-    font-size: 250%;
+    font-size: 200%;
   }
 }
 
